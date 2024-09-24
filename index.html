@@ -3,10 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>Company Landing Page</title>
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
-    
-    
+
+<nav>
+    <div class="logo">
+        <img src="assets/Logo-RevoU-5_1.original-removebg-preview.png" alt="Company Logo" width="100"> 
+    </div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#message">Message Us</a></li>
+        <li><a href="#profile">Our Profile</a></li>
+    </ul>
+</nav>
+
+<!-- Section Home -->
+<section id="home">
+    <div id="welcomeMessage"></div> 
+    <header>
+        <h1>Tugas Mini Project Revou</h1>
+        <h3>Halo saya Muhamad Fazrin Nugraha</h3>
+        <p>Ini adalah tugas akhir fundamental course, membuat website sederhana dengan menggunakan HTML,CSS,JS</p>
+        <img src="assets/banner.jpg" alt="Company Banner" style="width: 100%; height: auto;">
+    </header>
+</section>
+
+
+<section id="portfolio" class="section">
+    <h2>Portfolio</h2>
+    <div class="portfolio-container">
+        <div class="portfolio-item">Project 1</div>
+        <div class="portfolio-item">Project 2</div>
+        <div class="portfolio-item">Project 3</div>
+    </div>
+</section>
+
+
+<section id="message" class="section">
+    <h2>Message Us</h2>
+    <form id="contactForm" onsubmit="return validateForm(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <span id="nameError" class="error"></span>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <span id="emailError" class="error"></span>
+
+        <div class="gender-section">
+            <label>Gender:</label>
+            <label for="genderMale">
+                <input type="radio" id="genderMale" name="gender" value="male"> Male
+            </label>
+            <label for="genderFemale">
+                <input type="radio" id="genderFemale" name="gender" value="female"> Female
+            </label>
+        </div>
+        <span id="genderError" class="error"></span>
+
+        <label for="message">Message:</label>
+        <textarea id="messageContent" name="message"></textarea>
+        <span id="messageError" class="error"></span>
+
+        <input type="submit" value="Submit">
+    </form>
+    <div id="resultMessage" class="result"></div>
+</section>
+
+
+<section id="profile" class="section">
+    <h2>Our Profile</h2>
+    <p>Saya adalah seorang Mahasiswa dari Jakarta jurusan Informatika semester 3</p>
+</section>
+
+<footer>
+    <p>Fundamental Course Revou</p>
+</footer>
+
+
+<script src="js/index.js"></script>
 </body>
 </html>
