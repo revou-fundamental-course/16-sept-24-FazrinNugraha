@@ -1,11 +1,9 @@
-/* Bagian body dan layout */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Bagian header dan footer */
 header, footer {
     text-align: center;
     padding: 50px;
@@ -15,8 +13,8 @@ header, footer {
 
 nav {
     display: flex;
-    flex-direction: column; /* Mengubah menjadi kolom pada layar kecil */
-    align-items: center; /* Meratakan item di tengah */
+    flex-direction: column; 
+    align-items: center; 
     padding: 20px; 
     background-color: #f5f6ee; 
     border-bottom: 2px solid #080303; 
@@ -24,7 +22,7 @@ nav {
 
 nav ul {
     display: flex; 
-    flex-wrap: wrap; /* Agar menu bisa membungkus jika terlalu banyak */
+    flex-wrap: wrap; 
     margin: 0; 
     padding: 0;
     border: 2px solid #080303; 
@@ -57,19 +55,19 @@ nav ul li a {
     transition: background-color 0.3s ease; 
 }
 
-/* Efek hover untuk membuat item navbar transparan */
+
 nav ul li a:hover {
     transform: scale(1.05); 
     background-color: #f9f9f4;
     opacity: 0.7; 
 }
 
-/* Menghapus margin kiri pada item pertama */
+
 nav ul li:first-child {
     margin-left: 0; 
 }
 
-/* Bagian section */
+
 .section {
     padding: 50px;
     text-align: center;
@@ -88,7 +86,7 @@ nav ul li:first-child {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0); 
 }
 
-/* Styling untuk bagian home */
+
 #home header {
     text-align: left; 
     padding: 50px; 
@@ -105,7 +103,7 @@ nav ul li:first-child {
     margin-left: 0; 
 }
 
-/* Bagian portfolio */
+
 #portfolio {
     background-color: #e3de3f;
     border-bottom: 2px solid #080303;
@@ -132,13 +130,13 @@ nav ul li:first-child {
     opacity: 0.7; 
 }
 
-/* Bagian message */
+
 #message {
     background-color: #45494a45;
     border-bottom: 2px solid #080303;
 }
 
-/* Styling untuk form */
+
 form {
     margin: 20px auto;
     padding: 20px;
@@ -179,7 +177,7 @@ input[type="submit"]:hover {
     background-color: #4dc2f0;
 }
 
-/* Bagian gender */
+
 .gender-section {
     margin-bottom: 20px;
 }
@@ -188,13 +186,13 @@ input[type="submit"]:hover {
     margin-right: 15px;
 }
 
-/* Styling error */
+
 .error {
     color: red;
     font-size: 12px;
 }
 
-/* Styling untuk hasil pesan */
+
 .result {
     border: 1px solid #ccc; 
     width: 50%;
@@ -205,37 +203,37 @@ input[type="submit"]:hover {
     text-align: left;
 }
 
-/* Media Queries untuk Responsif */
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
     }
     
     nav ul {
-        flex-direction: column; /* Menu diubah menjadi kolom */
-        width: 100%; /* Lebar menu penuh */
+        flex-direction: column; 
+        width: 100%; 
     }
 
     nav ul li {
-        width: 100%; /* Lebar item menu penuh */
+        width: 100%;
         text-align: center;
     }
 
 
 
     .portfolio-item {
-        width: 80%; /* Lebar item portfolio lebih besar di perangkat kecil */
+        width: 80%; 
     }
 
     form {
-        width: 90%; /* Lebar form lebih besar di perangkat kecil */
+        width: 90%; 
     }
 
     #welcomeMessage {
-        font-size: 20px; /* Ukuran font lebih kecil */
+        font-size: 20px;
     }
 
-    /* Padding untuk section menjadi lebih kecil di perangkat kecil */
+    
     .section {
         padding: 30px;
     }
