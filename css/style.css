@@ -8,6 +8,7 @@ body {
 header, footer {
     text-align: center; 
     background-color: #45494a45; 
+    padding: 3%;
     border-bottom: 2px solid #080303; 
     opacity: 0;
     animation: fadeInAnimation 2s ease-in forwards; 
