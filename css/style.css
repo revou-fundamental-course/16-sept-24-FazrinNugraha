@@ -1,38 +1,41 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
 }
 
+/* Gaya Header dan Footer, termasuk efek animasi fade-in */
 header, footer {
-    text-align: center;
-    padding: 50px;
-    background-color: #45494a45;
-    border-bottom: 2px solid #080303;
-    opacity: 0; 
+    text-align: center; 
+    background-color: #45494a45; 
+    border-bottom: 2px solid #080303; 
+    opacity: 0;
     animation: fadeInAnimation 2s ease-in forwards; 
 }
 
+/* Gaya Navigasi menggunakan flexbox untuk layout kolom vertikal dan efek fade-in */
 nav {
-    display: flex;
+    display: flex; 
     flex-direction: column; 
     align-items: center; 
     padding: 20px; 
     background-color: #45494a45; 
     border-bottom: 2px solid #080303; 
     opacity: 0; 
-    animation: fadeInAnimation 2s ease-in forwards 0.5s; 
+    animation: fadeInAnimation 2s ease-in forwards 0.5s;
 }
 
+/* Gaya untuk daftar navigasi yang menggunakan flexbox dan memiliki border */
 nav ul {
     display: flex; 
     flex-wrap: wrap; 
     margin: 0; 
-    padding: 0;
+    padding: 0; 
     border: 2px solid #080303; 
     border-radius: 5px; 
 }
 
+/* Gaya untuk item navigasi dengan padding, dan pengaturan posisi */
 nav ul li {
     margin-left: 0; 
     padding: 10px 20px; 
@@ -40,55 +43,54 @@ nav ul li {
     position: relative; 
 }
 
+/* Gaya pemisah vertikal antar item navigasi */
 nav ul li:not(:first-child)::before {
-    content: ""; 
+    content: "";
     position: absolute; 
     left: 0; 
     top: 10%; 
-    width: 3px; 
+    width: 3px;
     height: 80%; 
     background-color: #080303; 
 }
 
+/* Gaya tautan dalam navigasi dengan efek hover */
 nav ul li a {
-    color: rgb(7, 5, 5);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
+    color: rgb(7, 5, 5); 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 14px; 
     display: block; 
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
 }
 
+/* Efek hover untuk tautan navigasi dengan skala dan perubahan latar belakang */
 nav ul li a:hover {
     transform: scale(1.05); 
-    background-color: #f9f9f4;
+    background-color: #f9f9f4; 
     opacity: 0.7; 
 }
 
-nav ul li:first-child {
-    margin-left: 0; 
-}
-
+/* Gaya umum untuk bagian konten dengan padding dan background color */
 .section {
-    padding: 50px;
-    text-align: center;
-    background-color: #e3de3f;
-    border-bottom: 2px solid #060606;
+    padding: 50px; 
+    text-align: center; 
+    background-color: #e3de3f; 
+    border-bottom: 2px solid #060606; 
     opacity: 0; 
-    animation: fadeInAnimation 2s ease-in forwards 1s;
+    animation: fadeInAnimation 2s ease-in forwards 1s; 
 }
 
+/* Gaya untuk pesan selamat datang di bagian home */
 #welcomeMessage {
-    font-size: 24px;
+    font-size: 24px; 
     color: #101010; 
     background-color: #e3de3f; 
     padding: 20px; 
-    border-radius: 0; 
-    margin-bottom: 0px; 
     border: 4px solid #080303; 
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0); 
 }
 
+/* Gaya khusus untuk header di bagian Home */
 #home header {
     text-align: left; 
     padding: 50px; 
@@ -96,137 +98,156 @@ nav ul li:first-child {
 
 #home header h1, 
 #home header p {
-    margin: 0;
-    padding-bottom: 20px;
+    margin: 0; 
+    padding-bottom: 20px; 
 }
 
+/* Gaya gambar di bagian Home */
 #home img {
-    display: block;  
+    display: block; 
     margin-left: 0; 
 }
 
+/* Gaya untuk bagian portofolio dengan animasi fade-in */
 #portfolio {
-    background-color: #e3de3f;
-    border-bottom: 2px solid #080303;
+    background-color: #e3de3f; 
+    border-bottom: 2px solid #080303; 
     opacity: 0; 
     animation: fadeInAnimation 2s ease-in forwards 1.5s; 
 }
 
+/* Gaya kontainer portofolio yang menggunakan flexbox */
 .portfolio-container {
-    display: flex;
+    display: flex; 
     flex-wrap: wrap; 
-    justify-content: space-around;
+    justify-content: space-around; 
 }
 
+/* Gaya untuk item portofolio dengan efek hover */
 .portfolio-item {
-    width: 20%;
-    padding: 10px;
-    background-color: #e3de3f;
-    margin-bottom: 20px;
+    width: 20%; 
+    padding: 10px; 
+    background-color: #e3de3f; 
+    margin-bottom: 20px; 
     text-align: center; 
     transition: transform 0.3s ease, opacity 0.3s ease; 
 }
 
+/* Gaya untuk logo portofolio dengan ukuran yang ditentukan */
 .portfolio-logo {
-    width: 60px;
+    width: 60px; 
     height: auto; 
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
 }
 
+/* Efek hover untuk item portofolio dengan skala dan perubahan opasitas */
 .portfolio-item:hover {
     transform: scale(1.05); 
     opacity: 0.7; 
 }
 
+/* Gaya untuk bagian Pesan Kami */
 #message {
-    background-color: #45494a45;
-    border-bottom: 2px solid #080303;
+    background-color: #45494a45; 
+    border-bottom: 2px solid #080303; 
     opacity: 0; 
     animation: fadeInAnimation 2s ease-in forwards 2s; 
 }
 
+/* Gaya umum untuk formulir, termasuk layout dan border */
 form {
-    margin: 20px auto;
-    padding: 20px;
+    margin: 20px auto; 
+    padding: 20px; 
     width: 50%; 
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    background-color: #7f87b5;
+    border-radius: 20px; 
+    border: 1px solid #ccc; 
+    background-color: #7f87b5; 
     text-align: left; 
     opacity: 0; 
     animation: fadeInAnimation 2s ease-in forwards 2.5s; 
 }
 
+/* Gaya untuk label dalam formulir */
 form label {
     display: block; 
-    margin-bottom: 10px;
+    margin-bottom: 10px; 
     font-weight: bold; 
 }
 
+/* Gaya untuk input teks, email, dan textarea di formulir */
 input[type="text"],
 input[type="email"],
 textarea {
     width: 100%; 
-    padding: 10px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
+    padding: 10px; 
+    margin-bottom: 20px; 
+    box-sizing: border-box; 
 }
 
+/* Gaya untuk tombol submit di formulir */
 input[type="submit"] {
-    display: block;
-    width: auto;
-    padding: 10px 20px;
-    background-color: #69cdcb;
-    border: none;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
+    display: block; 
+    width: auto; 
+    padding: 10px 20px; 
+    background-color: #69cdcb; 
+    border: none; 
+    color: white; 
+    font-weight: bold; 
+    cursor: pointer; 
 }
 
+/* Efek hover untuk tombol submit dengan perubahan warna latar */
 input[type="submit"]:hover {
-    background-color: #4dc2f0;
+    background-color: #4dc2f0; 
 }
 
+/* Gaya untuk bagian pilihan gender dalam formulir */
 .gender-section {
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
 }
 
+/* Gaya label pada bagian gender */
 .gender-section label {
-    margin-right: 15px;
+    margin-right: 15px; 
 }
 
+/* Gaya pesan kesalahan untuk validasi formulir */
 .error {
-    color: red;
-    font-size: 12px;
+    color: red; 
+    font-size: 12px; 
 }
 
+/* Gaya untuk menampilkan hasil, dengan border dan padding */
 .result {
     border: 1px solid #ccc; 
-    width: 50%;
+    width: 50%; 
     padding: 50px; 
     background-color: #f8faf5; 
     margin-top: 50px; 
     border-radius: 50px; 
-    text-align: left;
+    text-align: left; 
 }
 
+/* Gaya untuk bagian media sosial */
 .social-media {
     margin-top: 20px; 
 }
 
+/* Gaya tautan dan ikon di media sosial */
 .social-media a {
     margin: 0 10px; 
 }
 
 .social-media img {
-    width: 30px;
+    width: 30px; 
     height: auto; 
     vertical-align: middle; 
 }
 
+/* Media query untuk responsivitas, mengatur elemen agar sesuai di layar kecil */
 @media (max-width: 768px) {
     nav {
-        flex-direction: column;
+        flex-direction: column; 
     }
     
     nav ul {
@@ -235,8 +256,7 @@ input[type="submit"]:hover {
     }
 
     nav ul li {
-        width: 100%;
-        text-align: center;
+        width: 100%; 
     }
 
     .portfolio-item {
@@ -248,24 +268,26 @@ input[type="submit"]:hover {
     }
 
     #welcomeMessage {
-        font-size: 20px;
+        font-size: 20px; 
     }
 
     .section {
-        padding: 30px;
+        padding: 30px; 
     }
 }
 
+/* Animasi fade-in untuk transisi elemen dari opasitas 0 menjadi 1 */
 .fade-in {
-    opacity: 0;
-    animation: fadeInAnimation 2s ease-in forwards;
+    opacity: 0; 
+    animation: fadeInAnimation 2s ease-in forwards; 
 }
 
+/* Keyframes untuk animasi fade-in */
 @keyframes fadeInAnimation {
     from {
-        opacity: 0;
+        opacity: 0; 
     }
     to {
-        opacity: 1;
+        opacity: 1; 
     }
 }
