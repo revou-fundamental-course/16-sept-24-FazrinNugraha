@@ -1,12 +1,12 @@
-// Event listener yang dijalankan ketika DOM selesai dimuat
+
 document.addEventListener("DOMContentLoaded", function() {
-    // Meminta nama pengguna melalui prompt
+
     let userName = prompt("Please enter your name:");
     
-    // Mendapatkan elemen pesan selamat datang dari halaman
+
     let welcomeMessageElement = document.getElementById('welcomeMessage');
     
-    // Jika pengguna mengisi nama dan elemen ditemukan, tampilkan pesan selamat datang dengan nama
+
     if (userName && welcomeMessageElement) {
         welcomeMessageElement.innerText = `Halo ${userName}, Selamat Datang Di Mini Project Saya`;
     } else {
